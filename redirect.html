@@ -1,0 +1,10 @@
+<script type="text/javascript">
+	const queryString = window.location.search;
+
+	const urlParams = new URLSearchParams(queryString);
+
+	const redirect = urlParams.get('redirect')
+
+	//console.log(page_type);
+	window.location.replace(redirect);
+</script>
