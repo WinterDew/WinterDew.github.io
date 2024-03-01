@@ -11,12 +11,6 @@ NavBar Styling
 **********************************
 ==================================
 */
-
-.logo-image{
-    height:32px;
-    width:32px;
-}
-
 nav{
     display: flex;
     height: 8vh;
@@ -34,6 +28,27 @@ nav{
     gap: 1vw;
     align-items: center;
 }
+.logo-image{
+    height:2vw;
+    width: 2vw;
+}
+.logo-text{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap:0.5vw;
+    font-family: var(--ft-mono);
+    font-size: 2vw;
+    color: var(--clr-pri);
+    cursor:default;
+    user-select: none;        
+}
+
+.logo-text>span{
+    font-size: 1vw;
+
+}
 
 .links{
     display: flex;
@@ -47,19 +62,118 @@ hr{
     border: none;
     border-top: 0.65vh solid var(--clr-acc);   
 }
-
-.logo-text{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-    gap:0.5vw;
-    font-family: var(--ft-mono);
-    font-size: 2rem;
+.link>a{
+    font-family: var(--ft-pri);
     color: var(--clr-pri);
+    text-decoration: none;
+    border: none;
+    font-size: 1.2vw;
     
 }
-.logo-text>span{
-    font-size: 1rem;
+.link a::after{
+	content: "";
+    display: block;
+    background-image: linear-gradient(
+		to right, 
+		var(--clr-acc),
+        var(--clr-acc));
+    width: auto;
+    height: 0.1vh;
+    border-radius: 5px;
+    -webkit-transform: scaleX(0.0001);
+  	-ms-transform: scaleX(0.0001);
+  	transform: scaleX(0.0001);
+  	transform-origin: middle;
+  	-webkit-transition: -webkit-transform 500ms ease-in-out;
+  	transition: transform 500ms ease-in-out;
+}
+
+.link a:hover::after,
+.link a:focus::after{
+    -webkit-transform: scaleX(1);
+  	-ms-transform: scaleX(1);
+  	transform: scaleX(1);
 
 }
+.link a:hover,
+.link a:focus{
+    color: var(--clr-acc);
+}
+
+
+/* Resposive! */
+
+@media (max-width : 1400px){
+    .link>a{
+        font-size: 2vw;
+    }
+    .logo-text{
+        font-size: 3vw;
+    }
+    .logo-text>span{
+        font-size: 2vw;
+    }
+    .logo-image{
+        height:3vw;
+        width:3vw;
+    }
+}
+
+@media (max-width: 600px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        gap:0;
+        padding-right: 0;
+        padding-left: 0;
+        height: 10vh;
+    }
+    .links{
+        justify-content: space-evenly;
+        width:100%;
+    }
+    .logo{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    hr{
+        border-top: 0.4vh solid var(--clr-acc);
+    }
+
+    .link>a{
+        font-size: 3vw;
+    }
+    .logo-text{
+        font-size: 4vw;
+    }
+    .logo-text>span{
+        font-size: 2vw;
+    }
+    .logo-image{
+        height:4vw;
+        width:4vw;
+    }
+    
+}
+@media (max-width: 450px){
+    .link>a{
+        font-size: 4vw;
+    }
+    .logo-text{
+        font-size: 5vw;
+    }
+    .logo-text>span{
+        font-size: 3vw;
+    }
+    .logo-image{
+        height:5vw;
+        width:5vw;
+    }  
+}
+
+
+/* =****************= */
+/* Nav Bar complete   */
+/* =****************= */
