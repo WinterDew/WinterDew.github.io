@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Josefin+Sans&display=swap');
+
+
+:root{
+    --clr-pri: #EEF5FF;
+    --clr-acc: #B4D4FF;
+    --clr-accd: #86B6F6;
+    --clr-neu: #176B87;
+    --clr-neud: #104F64;
+    --clr-bg: #0D3D4E;
+    --ft-mono: "JetBrains Mono";
+    --ft-pri: "Josefin Sans";
+}
+
+*,*::after,*::before{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}

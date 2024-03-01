@@ -1,0 +1,65 @@
+html{
+    height:100vh;
+    width:100vw;
+    background-color: var(--clr-bg);
+}
+
+/* 
+==================================
+**********************************
+NavBar Styling 
+**********************************
+==================================
+*/
+
+.logo-image{
+    height:32px;
+    width:32px;
+}
+
+nav{
+    display: flex;
+    height: 8vh;
+    flex-direction: row;
+    width:100vw;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    gap:2vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr{
+    height: 0px;
+    border: none;
+    border-top: 0.65vh solid var(--clr-acc);   
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap:0.5vw;
+    font-family: var(--ft-mono);
+    font-size: 2rem;
+    color: var(--clr-pri);
+    
+}
+.logo-text>span{
+    font-size: 1rem;
+
+}
