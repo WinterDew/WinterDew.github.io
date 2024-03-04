@@ -17,3 +17,36 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+/* Default style for hover on links */
+a::after{
+	content: "";
+    display: block;
+    background-image: linear-gradient(
+		to right, 
+		var(--clr-acc),
+        var(--clr-acc));
+    width: auto;
+    height: 0.1vh;
+    border-radius: 5px;
+    -webkit-transform: scaleX(0.0001);
+  	-ms-transform: scaleX(0.0001);
+  	transform: scaleX(0.0001);
+  	transform-origin: middle;
+  	-webkit-transition: -webkit-transform 500ms ease-in-out;
+  	transition: transform 500ms ease-in-out;
+    
+}
+
+a:hover::after,
+a:focus::after{
+    -webkit-transform: scaleX(1);
+  	-ms-transform: scaleX(1);
+  	transform: scaleX(1);
+
+}
+a:hover,
+a:focus{
+    color: var(--clr-acc);
+}
