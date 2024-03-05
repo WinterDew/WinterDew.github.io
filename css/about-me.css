@@ -22,7 +22,7 @@ html{
     justify-content: space-between;
     gap: 3vh;
     font-size: 2rem;
-    background-image: url("/res/Background\ ripples.svg");
+    background-image: url("/res/background_ripples.svg");
     background-repeat: no-repeat;
     background-size: cover;
     user-select: none;
@@ -73,7 +73,7 @@ div#query{
 
 @media (max-width: 900px){
     .about{
-        background-image: url("/res/Background\ ripples\ mobie.svg");
+        background-image: url("/res/background_ripples_mobile.svg");
     }
     
     
