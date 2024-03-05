@@ -1,0 +1,20 @@
+@import url("/css/base.css");
+@import url("/css/navbar.css");
+html{
+    height:100vh;
+    width:100vw;
+    background-color: var(--clr-bg);
+    overflow:hidden;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+
+}
+main img{
+    height: 256px;
+    width: 256px;
+}
