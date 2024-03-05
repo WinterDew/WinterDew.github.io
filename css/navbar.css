@@ -1,0 +1,145 @@
+/* 
+==================================
+**********************************
+NavBar Styling 
+**********************************
+==================================
+*/
+nav{
+    display: flex;
+    height: 8vh;
+    flex-direction: row;
+    width:100vw;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+}
+.logo-image{
+    height:2vw;
+    width: 2vw;
+}
+.logo-text{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap:0.5vw;
+    font-family: var(--ft-mono);
+    font-size: 2vw;
+    color: var(--clr-pri);
+    cursor:default;
+    user-select: none;        
+}
+
+.logo-text>span{
+    font-size: 1vw;
+
+}
+
+.links{
+    display: flex;
+    gap:2vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr{
+    height: 0px;
+    border: none;
+    border-top: 0.65vh solid var(--clr-acc);   
+}
+.link>a{
+    font-family: var(--ft-pri);
+    color: var(--clr-pri);
+    text-decoration: none;
+    border: none;
+    font-size: 1.2vw;
+    
+}
+
+
+
+/* Resposive! */
+
+@media (max-width : 1400px){
+    .link>a{
+        font-size: 2vw;
+    }
+    .logo-text{
+        font-size: 3vw;
+    }
+    .logo-text>span{
+        font-size: 2vw;
+    }
+    .logo-image{
+        height:3vw;
+        width:3vw;
+    }
+}
+
+@media (max-width: 600px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        gap:0;
+        padding-right: 0;
+        padding-left: 0;
+        height: 10vh;
+    }
+    .links{
+        justify-content: space-evenly;
+        width:100%;
+    }
+    .logo{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    hr{
+        border-top: 0.4vh solid var(--clr-acc);
+    }
+
+    .link>a{
+        font-size: 3vw;
+    }
+    .logo-text{
+        font-size: 4vw;
+    }
+    .logo-text>span{
+        font-size: 2vw;
+    }
+    .logo-image{
+        height:4vw;
+        width:4vw;
+    }
+    
+}
+@media (max-width: 450px){
+    .link>a{
+        font-size: 4vw;
+    }
+    .logo-text{
+        font-size: 5vw;
+    }
+    .logo-text>span{
+        font-size: 3vw;
+    }
+    .logo-image{
+        height:5vw;
+        width:5vw;
+    }  
+}
+
+
+/* =****************= */
+/* Nav Bar complete   */
+/* =****************= */

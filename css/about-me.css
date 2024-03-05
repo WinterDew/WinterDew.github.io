@@ -1,0 +1,91 @@
+@import url("/css/base.css");
+@import url("/css/navbar.css");
+html{
+    height:auto;
+    width:100vw;
+    background-color: var(--clr-bg);
+    
+    overflow-x: hidden;
+}
+
+.about{
+    color: var(--clr-pri);
+    font-family: var(--ft-pri);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    justify-content: space-between;
+    gap: 3vh;
+    font-size: 2rem;
+    background-image: url("/res/Background\ ripples.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+    
+}
+
+.about>div:nth-child(odd){
+    align-self: flex-start;
+}
+
+.about>div:nth-child(even){
+    align-self: flex-end;
+    text-align: right;
+
+}
+
+.about a{
+    text-decoration: none;
+    font-family: var(--ft-mono);
+    color: var(--clr-pri);
+    width: fit-content;
+}
+
+.about a:hover,
+.about a:focus{
+    color: var(--clr-bg);
+}
+
+.about a::after{
+    visibility: hidden;
+}
+
+div#query{
+    font-family: var(--ft-mono);
+    font-size: 1.5rem;
+    user-select: text;
+}
+.about a{
+    text-decoration:underline;
+}
+
+#intro>span{
+    color: var(--clr-acc);
+    font-family: var(--ft-mono);
+}
+
+
+
+@media (max-width: 900px){
+    .about{
+        background-image: url("/res/Background\ ripples\ mobie.svg");
+    }
+    
+    
+}
+
+@media (max-width: 600px){
+    div#query{
+        font-family: var(--ft-mono);
+        font-size: 1rem;
+    }
+    .about{
+        font-size: 1.5rem;
+    }
+}
+
