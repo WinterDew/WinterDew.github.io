@@ -6,6 +6,19 @@ html{
     background-color: var(--clr-bg);
     
     overflow-x: hidden;
+    background-color: var(--clr-bg);
+    background-image: url("/res/kyle-glenn-gHwDURuSafI-unsplash.jpg");
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    backdrop-filter: blur(10px) saturate(183%);
+    -webkit-backdrop-filter: blur(10px) saturate(183%);
+    background-color: rgba(66, 66, 66, 0.56);
 }
 
 .about{
@@ -22,10 +35,11 @@ html{
     justify-content: space-between;
     gap: 3vh;
     font-size: 2rem;
-    background-image: url("/res/background_ripples.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    user-select: none;
+    
+    backdrop-filter: blur(10px) saturate(183%);
+    -webkit-backdrop-filter: blur(10px) saturate(183%);
+    background-color: rgba(66, 66, 66, 0.56);
+    
     
 }
 
@@ -48,7 +62,7 @@ html{
 
 .about a:hover,
 .about a:focus{
-    color: var(--clr-bg);
+    color: var(--clr-acc);
 }
 
 .about a::after{
@@ -70,14 +84,6 @@ div#query{
 }
 
 
-
-@media (max-width: 900px){
-    .about{
-        background-image: url("/res/background_ripples_mobile.svg");
-    }
-    
-    
-}
 
 @media (max-width: 600px){
     div#query{

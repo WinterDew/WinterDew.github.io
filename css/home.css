@@ -5,8 +5,20 @@ html{
     width:100vw;
     background-color: var(--clr-bg);
     overflow: hidden;
+    background-color: var(--clr-bg);
+    background-image: url("/res/kyle-glenn-gHwDURuSafI-unsplash.jpg");
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
+nav{
+    backdrop-filter: blur(10px) saturate(183%);
+    -webkit-backdrop-filter: blur(10px) saturate(183%);
+    background-color: rgba(66, 66, 66, 0.56);
+}
 
 
 /* 
@@ -31,7 +43,11 @@ main{
     align-items: start;
     padding-left: 2vw;
     padding-top: 10vh;
+    height: 100vh;
     font-family: var(--ft-pri);
+    backdrop-filter: blur(10px) saturate(183%);
+    -webkit-backdrop-filter: blur(10px) saturate(183%);
+    background-color: rgba(66, 66, 66, 0.56);
 }
 
 .title{

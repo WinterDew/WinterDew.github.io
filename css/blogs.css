@@ -1,20 +1,93 @@
 @import url("/css/base.css");
 @import url("/css/navbar.css");
 html{
-    height:100vh;
+    min-height:100vh;
+    height: fit-content;
     width:100vw;
+
+    overflow-x: hidden;
     background-color: var(--clr-bg);
-    overflow:hidden;
+    background-image: url("/res/kyle-glenn-gHwDURuSafI-unsplash.jpg");
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+nav{
+    backdrop-filter: blur(10px) saturate(183%);
+    -webkit-backdrop-filter: blur(10px) saturate(183%);
+    background-color: rgba(66, 66, 66, 0.56);
 }
 
 main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:100vh;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    
+    padding: 2vw;
+    gap: 1vw;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+}
+
+.card{
+    padding: 1vw;
+    backdrop-filter: blur(10px) saturate(183%);
+    -webkit-backdrop-filter: blur(10px) saturate(183%);
+    background-color: rgba(98, 98, 98, 0.56);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    min-height: 20vh;
+}
+
+.card>strong{
+    font-family: var(--ft-pri);
+    text-decoration: none;
+    color: var(--clr-pri);
+    font-size: calc(max(20px,2vw));
 
 }
-main img{
-    height: 256px;
-    width: 256px;
+.card>a:hover{
+    color: var(--clr-acc);
+}
+.date{
+    font-family: var(--ft-mono);
+    color: var(--clr-accd);
+}
+.description{
+    font-family: var(--ft-pri);
+    font-size: 2vb;
+    margin-top: 5%;
+    color: var(--clr-pri);
+
+}
+
+.card>hr{
+    border-top: 0.25vh solid var(--clr-acc);
+}
+
+.card>.card-link{
+    width: fit-content;
+    padding-top: 20px;
+}
+
+.card a::after{
+    display: none;
+}
+
+.card a{
+    text-decoration: none;
+    color: var(--clr-acc);
+    font-family: var(--ft-mono);
+    font-size: 2vb;
+
+}
+
+
+.card a:hover{
+    color: var(--clr-accd);
 }
