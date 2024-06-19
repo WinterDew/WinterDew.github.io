@@ -38,14 +38,12 @@ html{
     
 }
 
-.about>div:nth-child(odd){
-    align-self: flex-start;
+.about>hr{
+    border-top: 0.25vh solid var(--clr-acc);
 }
 
-.about>div:nth-child(even){
-    align-self: flex-end;
-    text-align: right;
-
+.about>div{
+    align-self: flex-start;
 }
 
 .about a{
@@ -68,6 +66,7 @@ div#query{
     font-family: var(--ft-mono);
     font-size: 1.5rem;
     user-select: text;
+    
 }
 .about a{
     text-decoration:underline;
