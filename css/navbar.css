@@ -16,6 +16,12 @@ nav{
     padding-right: 2vw;
 }
 
+nav{
+    backdrop-filter: blur(10px) saturate(183%);
+    -webkit-backdrop-filter: blur(10px) saturate(183%);
+    background-color: rgba(66, 66, 66, 0.56);
+}
+
 .logo{
     display: flex;
     flex-direction: row;
