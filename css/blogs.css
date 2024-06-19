@@ -72,6 +72,8 @@ main{
     padding-top: 20px;
 }
 
+
+
 .card a::after{
     display: none;
 }
@@ -84,6 +86,9 @@ main{
 
 }
 
+.card-link>a{
+    font-size: 2.5vb;
+}
 
 .card a:hover{
     color: var(--clr-accd);
@@ -93,6 +98,9 @@ main{
     main{
         grid-template-columns: repeat(2, 1fr);
     }
+    .card-link>a{
+        font-size: 2vb;
+    }
 }
 
 @media (max-width: 450px){
@@ -101,5 +109,8 @@ main{
     }
     .card{
         padding: 2vw;
+    }
+    .card-link>a{
+        font-size: 2vb;
     }
 }
