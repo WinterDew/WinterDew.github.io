@@ -1,6 +1,10 @@
-let main = document.getElementsByTagName("main");
+let body = document.getElementsByTagName("body");
+const urlParams = new URLSearchParams(window.location.search);
+const blogId = urlParams.get('id')
 
 function renderBlogIndex(json){
+    body[0].innerHTML += "<main></main>";
+    let main = document.getElementsByTagName("main");
     main[0].innerHTML = "";
     json.forEach(card => {
         var title = card["title"];
@@ -18,9 +22,23 @@ function renderBlogIndex(json){
     });
 }
 
-fetch('/blogs/blog-list.json')
+function renderBlog(md){
+    body[0].innerHTML += `<div id="blog-content"></div>`;
+    let blog = document.getElementById("blog-content");
+    blog.innerHTML = marked.parse(md);
+}
+
+if (blogId === null) {
+
+    fetch('/blogs/blog-list.json')
     .then((response) => response.json())
     .then((json) => renderBlogIndex(json));
+
+} else {
+    fetch(`/blogs/${blogId}.md`)
+    .then((response) => response.text())
+    .then((md) => renderBlog(md));
+}
 
   
 

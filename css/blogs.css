@@ -1,5 +1,6 @@
 @import url("/css/base.css");
 @import url("/css/navbar.css");
+@import url("/css/blog-style.css");
 html{
     min-height:100vh;
     height: fit-content;
@@ -16,7 +17,10 @@ html{
 
 }
 
-
+body{
+    height: 100%;
+    width: 100%;
+}
 
 main{
     display: grid;
