@@ -35,7 +35,7 @@ if (blogId === null) {
     .then((json) => renderBlogIndex(json));
 
 } else {
-    fetch(`/blogs/${blogId}.md`)
+    fetch(`/blogs/${blogId}/main.md`)
     .then((response) => response.text())
     .then((md) => renderBlog(md));
 }

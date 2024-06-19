@@ -1,16 +1,17 @@
 @import url(/css/base.css);
 
-#blog-content{
+#blog-content{   
     font-family: var(--ft-pri);
-    padding: 3vb;
-    margin: 5px;
+    padding: 1vw;
+    margin: 2vw;
+    margin-right: 2.5vw;
     margin-top: 2vb;
     border-radius: 10px;
     color: var(--clr-pri);
     backdrop-filter: blur(10px) saturate(183%);
     -webkit-backdrop-filter: blur(10px) saturate(183%);
     background-color: rgba(66, 66, 66, 0.56);
-    min-height: 40vh;
+    min-height: 40vh;    
 }
 
 #blog-content img{
@@ -23,7 +24,7 @@
     text-decoration: none;
     color: var(--clr-acc);
     font-family: var(--ft-mono);
-    font-size: 2vb;
+    /* font-size: 2vb; */
 }
 
 #blog-content a::after{
@@ -42,4 +43,7 @@
 #blog-content *{
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
+    overflow-wrap: break-word;
+    word-break:normal;
 }
+

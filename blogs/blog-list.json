@@ -1,9 +1,9 @@
 [
     {
         "title":"Blogs are now possible!",
-        "date":"18.Jun.2024",
-        "description":"Blogs have been made possible using <a href='https://zerodevx.github.io/zero-md/'>zero-md</a>  renderer!!<br>",
-        "ref":"#"
+        "date":"19.Jun.2024",
+        "description":"Blogs have been made possible using <a href='https://marked.js.org/'>Marked Js</a>  renderer!!<br>",
+        "ref":"/blogs.html?id=19062024"
 
     }
 ]
