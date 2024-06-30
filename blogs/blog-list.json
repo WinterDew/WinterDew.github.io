@@ -5,5 +5,11 @@
         "description":"Blogs have been made possible using <a href='https://marked.js.org/'>Marked Js</a>  renderer!!<br>",
         "ref":"/blogs.html?id=19062024"
 
+    },
+    {
+        "title":"More Updates to website",
+        "date":"30.Jun.2024",
+        "description":"Website now has a cool interactive background on the home page",
+        "ref":"/blogs.html?id=30062024"
     }
 ]
