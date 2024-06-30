@@ -32,7 +32,7 @@ if (blogId === null) {
 
     fetch('/blogs/blog-list.json')
     .then((response) => response.json())
-    .then((json) => renderBlogIndex(json));
+    .then((json) => renderBlogIndex(json.reverse()));
 
 } else {
     fetch(`/blogs/${blogId}/main.md`)
